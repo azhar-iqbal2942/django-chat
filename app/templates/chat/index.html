@@ -1,0 +1,12 @@
+{% extends '../base/base.html' %}
+
+{% block content %}
+<div class="grid grid-cols-10 h-screen">
+    <aside class="col-span-2 bg-gray-200 overflow-auto p-4">
+      <!-- Your aside content -->
+    </aside>
+    <div class="col-span-8 flex flex-col">
+        {% include './chat.html' %}
+    </div>
+</div>
+{% endblock content%}
